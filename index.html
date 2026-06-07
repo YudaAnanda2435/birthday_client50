@@ -179,7 +179,7 @@
     const display = document.getElementById('display');
 
     function press(char) {
-      if (input.length >= 4) return;
+      if (input.length >= 6) return;
 
       input += char;
       updateDisplay();
@@ -201,7 +201,7 @@
 
     function updateDisplay() {
       display.innerHTML = "";
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 6; i++) {
         const char = input[i] ? input[i] : "○";
         display.innerHTML += `<span class="placeholder">${char}</span>`;
       }
